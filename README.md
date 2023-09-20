@@ -7,6 +7,18 @@ Get it here: https://gpslogger.app/
 ## Nifi
 Get it here: https://nifi.apache.org/download.html and after installation, import the template.
 
+## PostgreSQL database
+
+Requires a table, in the underlying template named "gpslogger3" with the following schema:
+
+- lat double precision Latitude
+- long double precision Longitude
+- id text user id included in the url
+- aid text android id
+- time text time
+- acc double precision accuracy
+- bat double precision battery percentage
+
 ## Create self-signed certificat
 sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \
    -keypass [yourpassword] -storepass [yourpassword] -keystore keystore.jks \
