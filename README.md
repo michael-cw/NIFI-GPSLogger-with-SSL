@@ -8,12 +8,14 @@ After that you can use the gpslogger_profil.properties file to import the profil
 
 IMPORTANT: Before starting to log, also import the SSL certificate into the apps truststore. For details check the app manual: <https://gpslogger.app/#customsslcertificates>
 
-## Nifi
+## Apache NIFI
 Get it here: https://nifi.apache.org/download.html and after installation, import the template.
 
 After entering the process group you should see the following nifi flow:
 
 ![](./https_gpslogger.png)
+
+Modify the **StandardRestrictedSSLContextServiceGPSlogger** so that it corresponds with your keystore.jks location and the credentials.
 
 ## PostgreSQL database
 
