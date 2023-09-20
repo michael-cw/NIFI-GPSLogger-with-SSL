@@ -8,6 +8,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 Creates a NIFI https web server, which ingests data from [GPSLogger](https://gpslogger.app/) for Android application over SSL and writes to a PostgreSQL database. This set-up can be used to monitor fieldwork activities in household surveys. It was tested and developed on Ubuntu 22.04 LTS. Important to note here is also that this is only for advanced users who are familiar with the basic configuration of a web server and how to set-up a PostgreSQL database. The retrieved log data can be used with the [susoparaviewer](https://github.com/michael-cw/susoparaviewer) application.
 
+**Important**: When using this tool, make sure you are in compliance with local labor laws and privacy regulations.
+
 ## GPS Logger for Android
 Get it here: https://gpslogger.app/
 
@@ -26,7 +28,7 @@ Modify the **StandardRestrictedSSLContextServiceGPSlogger** so that it correspon
 
 ## PostgreSQL database
 
-Requires a table, in the underlying template named "gpslogger3" with the following schema:
+Requires a table, in the underlying template named "gpslogger3", with the following schema:
 
 - lat double precision Latitude
 - long double precision Longitude
