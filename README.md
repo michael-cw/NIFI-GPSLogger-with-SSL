@@ -1,13 +1,13 @@
 # nifi-GPSLoger-with-SSL
 Creates a NIFI https server, which ingests data from GPSLogger for Android application over SSL and writes to a PostgreSQL database.
 
-# GPS Logger for Android
+## GPS Logger for Android
 Get it here: https://gpslogger.app/
 
-# Nifi
-Get it here: https://nifi.apache.org/download.html
+## Nifi
+Get it here: https://nifi.apache.org/download.html and after installation, import the template.
 
-# Create self-signed certificat
+## Create self-signed certificat
 sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \
    -keypass [yourpassword] -storepass [yourpassword] -keystore keystore.jks \
    -ext "SAN=IP:192.168.100.254" \
