@@ -11,7 +11,7 @@ Creates a NIFI https web server, which ingests data from [GPSLogger](https://gps
 ## GPS Logger for Android
 Get it here: https://gpslogger.app/
 
-After that you can use the gpslogger_profil.properties file to import the profile. The id variable in the URL can be modified, to correspond with the tablet user, all other values should be left as they are. You may after some testing also modify additional settings as per your requirements.
+After that you can use the [gpslogger_profil.properties](https://github.com/michael-cw/NIFI-GPSLogger-with-SSL/blob/main/gpslogger_profil.properties) file to import the profile. The id variable in the URL can be modified, to correspond with the tablet user, all other values should be left as they are. You may after some testing also modify additional settings as per your requirements.
 
 IMPORTANT: Before starting to log, also import the SSL certificate into the apps truststore. For details check the app manual: <https://gpslogger.app/#customsslcertificates>
 
