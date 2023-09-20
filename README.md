@@ -33,10 +33,10 @@ sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \
    -ext "SAN=IP:192.168.100.254" \
    -dname "CN=192.168.100.254"
 
-The URLs provide above must matach the URLs you are using, so you have to replace it.
+The URLs provided above must match the URLs you are using, so you have to replace it.
    
 after hitting enter you will then need to provide additional user information for the certificate. Important is also that you provide the SAME entry which you have under -dname in the first name/last name question which appears immedeatly after running this command.
 
-Copy the keystore.jks file to a folder where nifi can read it, and update the SSLcontext service with your path and your credentials. That shold be id.
+Copy the keystore.jks file to a folder where nifi can read it, and update the SSLcontext service with your path and your credentials. That shold be it.
 
 Happy logging!
