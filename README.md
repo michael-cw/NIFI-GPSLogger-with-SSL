@@ -29,7 +29,7 @@ Requires a table, in the underlying template named "gpslogger3" with the followi
 - acc double precision accuracy
 - bat double precision battery percentage
 
-If your table has a different name, then modify in the **ConvertJSONToSQL** properties.
+If your table has a different name, then modify in the **ConvertJSONToSQL** properties. Modify your database location path and name in the **DBCPConnectionPoolPostgreSQL** Controller Service.
 
 ## Create self-signed certificat
 sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \
