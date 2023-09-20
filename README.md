@@ -1,4 +1,11 @@
 # NIFI-GPSLogger-with-SSL
+
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
 Creates a NIFI https server, which ingests data from GPSLogger for Android application over SSL and writes to a PostgreSQL database.
 
 ## GPS Logger for Android
@@ -39,8 +46,8 @@ sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \
 
 The URLs provided above must match the URLs you are using, so you have to replace it.
    
-after hitting enter you will then need to provide additional user information for the certificate. Important is also that you provide the SAME entry which you have under -dname in the first name/last name question which appears immedeatly after running this command.
+After hitting enter you will then need to provide additional user information for the certificate. **Important** is also that you provide the SAME entry which you have under -dname in the first name/last name question which appears immedeatly after hitting enter.
 
-Copy the keystore.jks file to a folder where nifi can read it, and update the SSLcontext service with your path and your credentials. That shold be it.
+Copy the keystore.jks file to a folder where nifi can read it, and update the SSLcontext service with your path and your credentials. That should be it.
 
 Happy logging!
