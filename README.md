@@ -1,4 +1,4 @@
-# nifi-GPSLoger-with-SSL
+# nifi-GPSLogger-with-SSL
 Creates a NIFI https server, which ingests data from GPSLogger for Android application over SSL and writes to a PostgreSQL database.
 
 ## GPS Logger for Android
