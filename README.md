@@ -42,9 +42,9 @@ Requires a table, in the underlying template named "gpslogger3", with the follow
 If your table has a different name, then modify in the **ConvertJSONToSQL** properties. Modify your database location path and name in the **DBCPConnectionPoolPostgreSQL** Controller Service.
 
 ## Create self-signed certificat
-sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \
-   -keypass [yourpassword] -storepass [yourpassword] -keystore keystore.jks \
-   -ext "SAN=IP:192.168.100.254" \
+sudo ./keytool -genkey -alias [server-alias] -keyalg RSA \\\
+   -keypass [yourpassword] -storepass [yourpassword] -keystore keystore.jks \\\
+   -ext "SAN=IP:192.168.100.254" \\\
    -dname "CN=192.168.100.254"
 
 The URLs provided above must match the URLs you are using, so you have to replace it.
